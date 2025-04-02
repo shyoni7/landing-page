@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+  <meta charset="UTF-8">
+  <title>קורסים בחינוך פיננסי</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>ברוכים הבאים לקורסים הדיגיטליים בחינוך פיננסי!</h1>
+    <p class="description">
+      בואו ללמוד איך לנהל כסף בצורה חכמה, להבין השקעות, לתכנן תקציב אישי, ולהכין את עצמכם לעתיד פיננסי חזק ובטוח 💡
+    </p>
+
+    <img src="images/pic1.png" alt="חינוך פיננסי" class="real-image">
+
+    <div class="video-container">
+      <iframe width="100%" height="315" 
+        src="https://www.youtube.com/embed/jIRWU1fCFrs?si=5Hufla82VLrHX9Gn" 
+        title="YouTube video player" frameborder="0" allowfullscreen>
+      </iframe>
+    </div>
+
+    <a href="#contact" class="cta-button">להרשמה לקורס</a>
+  </div>
+
+  <form id="contact" action="https://formspree.io/f/mnnpbkkw" method="POST" class="contact-form" target="hidden_iframe">
+    <label for="name">שם מלא:</label>
+    <input type="text" name="name" id="name" required>
+
+    <label for="email">אימייל:</label>
+    <input type="email" name="email" id="email" required>
+
+    <label for="phone">טלפון:</label>
+    <input type="tel" name="phone" id="phone">
+
+    <label for="course">בחר קורס:</label>
+    <select name="course" id="course">
+      <option value="ניהול תקציב אישי">ניהול תקציב אישי</option>
+      <option value="השקעות בסיסיות">השקעות בסיסיות</option>
+      <option value="חינוך פיננסי לבני נוער">חינוך פיננסי לבני נוער</option>
+    </select>
+
+    <label for="message">הערות:</label>
+    <textarea name="message" id="message" rows="4" placeholder="האם יש משהו שתרצה להוסיף?"></textarea>
+
+    <button type="submit" class="cta-button">שלח פרטים</button>
+  </form>
+
+  <iframe name="hidden_iframe" style="display:none;"></iframe>
+
+  <div id="thank-you-message" style="display: none; text-align: center; color: green; font-size: 20px; margin-top: 20px;">
+    ✅ תודה! הפרטים נשלחו בהצלחה. נחזור אליך בהקדם 🙏
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
